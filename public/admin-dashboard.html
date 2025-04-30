@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <section>
+<!-- Add Teacher Form -->
+<form id="addTeacherForm">
+  <input type="text" id="teacherName" placeholder="Name" required>
+  <input type="email" id="teacherEmail" placeholder="Email" required>
+  <input type="password" id="teacherPassword" placeholder="Password" required>
+  <input type="text" id="teacherDepartment" placeholder="Department" required>
+  <input type="text" id="teacherSubject" placeholder="Subject" required>
+  <button type="submit">Add Teacher</button>
+</form>
+</section>
+
+<section>
+<h2>Teacher List</h2>
+<ul id="teacherList"></ul>
+</section>
+
+<section>
+<h2>Pending Student Approvals</h2>
+<ul id="pendingStudentList"></ul>
+</section>
+<button id="logoutBtn">Logout</button>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

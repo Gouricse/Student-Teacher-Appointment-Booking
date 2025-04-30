@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="dashboard-header">
+      <h1><i class="fas fa-chalkboard-teacher"></i> Teacher Dashboard</h1>
+      <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+
+    <section>
+      <h2><i class="fas fa-calendar-alt"></i> Appointments</h2>
+      <ul id="appointmentsList"></ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-envelope"></i> Messages from Students</h2>
+      <ul id="messagesList"></ul>
+    </section>
+  </div>
+
+  <script type="module" src="js/teacher.js"></script>
+</body>
+</html>
